@@ -135,7 +135,7 @@ Test set: 42,559 transactions, 71 frauds. Each model is evaluated at its frozen 
 
 ## Streamlit app
 
-**App link:** [Streamlit link]
+**App link:** [[Streamlit link](https://credit-card-fraud-detection-ai-mldl.streamlit.app/)]
 
 The app uses the deployed tuned ANN. Every prediction follows the same path: the 30 features are put into the training order, scaled with the saved RobustScaler, and scored by the ANN. A transaction is predicted as fraud when its score is at or above the frozen threshold of 0.3364. The output is called a **fraud score** because it is not a calibrated probability. Inference and performance data come only from the saved files in `artifacts/`, and the static banner is loaded from `assets/`; the app does not retrain the model or read `creditcard.csv`.
 
