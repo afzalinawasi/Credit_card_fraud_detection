@@ -1,0 +1,73 @@
+{
+  "model_name": "ANN (Step 17 Candidate 16)",
+  "family": "DL",
+  "threshold": 0.3363977372646332,
+  "feature_columns": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "hyperparameters": {
+    "learning_rate": 0.001,
+    "hidden_units": [
+      32,
+      16
+    ],
+    "fraud_weight": 1.0,
+    "dropout": 0.2,
+    "batch_size": 1024
+  },
+  "test_results": {
+    "pr_auc": 0.8149472797515771,
+    "precision": 0.8208955223880597,
+    "recall": 0.7746478873239436,
+    "f1": 0.7971014492753623,
+    "roc_auc": 0.9669242152216634,
+    "accuracy": 0.9993420898047417
+  },
+  "test_confusion_matrix": [
+    [
+      42476,
+      12
+    ],
+    [
+      16,
+      55
+    ]
+  ],
+  "demo_sample_note": "This demo sample is deliberately enriched with fraud cases for demonstration and does not represent the dataset's natural fraud prevalence.",
+  "random_state": 42,
+  "library_versions": {
+    "tensorflow": "2.16.2",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "1.26.4"
+  }
+}
